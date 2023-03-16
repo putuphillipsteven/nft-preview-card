@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(0, 0%, 100%);
+}
+
+main {
+  width: 300px;
+  height: 500px;
+  background-color: hsl(216, 50%, 16%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  border-radius: 8px;
+  padding: 16px;
+  font-family: "Outfit", sans-serif;
+}
+main .nft-img {
+  height: 50%;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 0.5s ease;
+  background-color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+main .nft-img img {
+  width: 100%;
+  margin-top: -24px;
+}
+main .nft-img:hover .nft-pict {
+  opacity: 0.3;
+}
+main .nft-img:hover .img-view {
+  opacity: 1;
+}
+main .img-view {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  top: 30%;
+  left: 47.5%;
+  position: absolute;
+}
+main .nft-details {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+main .nft-details .nft-title {
+  font-size: 14px;
+  cursor: pointer;
+}
+main .nft-details .nft-title:hover {
+  color: hsl(178, 100%, 50%);
+}
+main .nft-details .nft-explanation {
+  font-size: 16px;
+  opacity: 0.6;
+  font-weight: lighter;
+}
+main .nft-details .nft-price-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  padding-bottom: 22px;
+  border-bottom: 0.5px solid rgba(168, 168, 168, 0.5);
+}
+main .nft-details .nft-price-left {
+  color: hsl(178, 100%, 50%);
+}
+main .nft-details .nft-price-right {
+  opacity: 0.6;
+}
+main .nft-details .nft-price-left,
+main .nft-details .nft-price-right {
+  display: flex;
+}
+main .nft-details .nft-price-left img,
+main .nft-details .nft-price-right img {
+  margin-right: 8px;
+}
+main .nft-details .nft-creator {
+  display: flex;
+  align-items: center;
+}
+main .nft-details .nft-creator img {
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
+  border-radius: 50%;
+  border: 1px solid hsl(0, 0%, 100%);
+}
+main .nft-details .creator-name:hover span {
+  color: hsl(178, 100%, 50%);
+  opacity: 1;
+  cursor: pointer;
+}
+main .nft-details .creator-name {
+  opacity: 0.6;
+}/*# sourceMappingURL=styles.css.map */
